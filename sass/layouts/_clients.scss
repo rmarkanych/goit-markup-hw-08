@@ -1,0 +1,34 @@
+/* *******CLIENTS********/
+
+.clients__list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients__item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients__card {
+  height: 92px;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border var(--animation), fill var(--animation), color var(--animation);
+
+&:hover,
+  &:focus {
+    border: 1px solid var(--primary-blue-color);
+    fill: var(--primary-blue-color);
+    color: var(--primary-blue-color);
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}
