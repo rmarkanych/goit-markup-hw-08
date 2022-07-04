@@ -2,12 +2,25 @@
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  @media screen and(min-width:1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .clients__item {
   width: 170px;
   height: 92px;
+  @media screen and(min-width:480px) {
+    width: 210px;
+  }
+  @media screen and(min-width:768px) {
+    width: 226px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 170px;
+  }
 }
 
 .clients__card {
@@ -20,8 +33,17 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border var(--animation), fill var(--animation), color var(--animation);
+  @media screen and(min-width:480px) {
+    width: 210px;
+  }
+  @media screen and(min-width:768px) {
+    width: 226px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 170px;
+  }
 
-&:hover,
+  &:hover,
   &:focus {
     border: 1px solid var(--primary-blue-color);
     fill: var(--primary-blue-color);
