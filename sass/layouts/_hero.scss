@@ -1,8 +1,6 @@
 /* *******HERO******* */
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-opti.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -13,12 +11,13 @@
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-opti.jpeg);
   &__container {
     margin: 0 auto;
-    width: 360px;
+    max-width: 360px;
     @media screen and(min-width:1200px) {
-      width: 696px;
+      max-width: 696px;
     }
   }
 

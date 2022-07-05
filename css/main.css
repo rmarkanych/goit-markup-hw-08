@@ -143,6 +143,26 @@ button {
   color: var(--logo-color);
 }
 
+.header__button {
+  margin-left: auto;
+  background-color: white;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
+}
+
+.navigation {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: block;
+  }
+}
+
 .navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,10 +205,30 @@ button {
 }
 
 .header-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .header-contacts__item > .header-contacts__link {
@@ -205,15 +245,25 @@ button {
 }
 
 .header-contacts__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .header-contacts__link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   -webkit-transition: color var(--animation), fill var(--animation);
   transition: color var(--animation), fill var(--animation);
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: var(--primary-blue-color);
@@ -233,8 +283,6 @@ button {
 
 /* *******HERO******* */
 .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-opti.jpeg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-opti.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -245,14 +293,16 @@ button {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-opti.jpeg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-opti.jpeg);
 }
 .hero__container {
   margin: 0 auto;
-  width: 360px;
+  max-width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .hero__container {
-    width: 696px;
+    max-width: 696px;
   }
 }
 .hero__title {
@@ -762,18 +812,52 @@ button {
 
 /* *******PORTFOLIO ********/
 .portfolio-button--wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-button--wrapper {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-button--wrapper {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-button__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-button__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
+@media screen and (min-width: 320px) {
+  .portfolio-button__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .portfolio-button__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-button__list > .portfolio-button__item {
+    margin-bottom: 0;
+  }
+}
 .portfolio-button__item:not(:last-child) {
   margin-right: 8px;
 }
@@ -812,13 +896,31 @@ button {
 }
 
 .projects__item {
-  -ms-flex-preferred-size: 370px;
-      flex-basis: 370px;
-  height: 100%;
+  -ms-flex-preferred-size: 450px;
+      flex-basis: 450px;
+}
+@media screen and (min-width: 768px) {
+  .projects__item {
+    -ms-flex-preferred-size: 354px;
+        flex-basis: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    -ms-flex-preferred-size: 370px;
+        flex-basis: 370px;
+  }
 }
 
 .projects__card {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition: opacity var(--animation), -webkit-box-shadow var(--animation);
   transition: opacity var(--animation), -webkit-box-shadow var(--animation);
   transition: box-shadow var(--animation), opacity var(--animation);
@@ -861,6 +963,9 @@ button {
 
 .projects__text--wrapper {
   overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
@@ -1144,6 +1249,7 @@ button {
 @media screen and (min-width: 1200px) {
   .footer-right {
     display: block;
+    margin-left: auto;
   }
 }
 
@@ -1180,13 +1286,18 @@ button {
 
 .footer-right__input {
   height: 50px;
-  width: 358px;
+  width: 350px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding-left: 16px;
   outline: none;
   color: var(--primary-white-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer-right__input {
+    width: 358px;
+  }
 }
 .footer-right__input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -1205,6 +1316,15 @@ button {
 }
 
 .footer-right__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: var(--primary-blue-color);
   color: var(--primary-white-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

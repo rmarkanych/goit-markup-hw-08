@@ -161,6 +161,7 @@
   align-items: center;
   @media screen and(min-width:1200px) {
     display: block;
+    margin-left: auto;
   }
 }
 .footer-right__subscription {
@@ -182,22 +183,25 @@
 
 .footer-right__input {
   height: 50px;
-  width: 358px;
+  width: 350px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding-left: 16px;
   outline: none;
   color: var(--primary-white-color);
+  @media screen and(min-width:1200px) {
+    width: 358px;
+  }
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
 }
 
 .footer-right__button {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primary-blue-color);
   color: var(--primary-white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

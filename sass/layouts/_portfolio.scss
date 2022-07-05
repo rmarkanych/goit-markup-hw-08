@@ -1,12 +1,40 @@
 /* *******PORTFOLIO ********/
 
 .portfolio-button--wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media screen and(min-width:768px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-button__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @media screen and(min-width:768px) {
+    justify-content: center;
+  }
+}
+
+@media screen and(min-width:320px) {
+  .portfolio-button__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+@media screen and(min-width:400px) {
+  .portfolio-button__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+@media screen and(min-width:768px) {
+  .portfolio-button__list > .portfolio-button__item {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-button__item:not(:last-child) {
@@ -27,12 +55,12 @@
   color: var(--title-color);
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
   &:focus,
-    &:hover {
-      color: var(--primary-white-color);
-      background-color: var(--primary-blue-color);
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
+  &:hover {
+    color: var(--primary-white-color);
+    background-color: var(--primary-blue-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .projects {
@@ -42,18 +70,26 @@
 }
 
 .projects__item {
-  flex-basis: 370px;
-  height: 100%;
+  flex-basis: 450px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: 370px;
+  }
 }
 
 .projects__card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--animation), opacity var(--animation);
   &:hover,
-    &:focus {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .projects__card--wrapper {
@@ -76,13 +112,14 @@
   transform: translateY(100%);
   transition: transform var(--animation), opacity var(--animation);
   .projects__item:hover & {
-      transform: translateY(0);
-      opacity: 1;
-    }
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .projects__text--wrapper {
   overflow: hidden;
+  flex-grow: 1;
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
