@@ -93,13 +93,20 @@ button {
 }
 
 .subtitle {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.178;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+@media screen and (min-width: 1200px) {
+  .subtitle {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.166;
+  }
 }
 
 .button {
@@ -303,9 +310,10 @@ button {
 /* *******HERO******* */
 .hero {
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
+  margin: 0auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -321,6 +329,8 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_md.png);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_md.png);
   }
@@ -1314,7 +1324,7 @@ button {
 
 .footer-right__input {
   height: 50px;
-  max-width: 350px;
+  max-width: 450px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1324,7 +1334,7 @@ button {
 }
 @media screen and (min-width: 480px) {
   .footer-right__input {
-    width: 350px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 1200px) {
