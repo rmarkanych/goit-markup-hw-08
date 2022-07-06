@@ -183,13 +183,16 @@
 
 .footer-right__input {
   height: 50px;
-  width: 350px;
+  max-width: 350px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding-left: 16px;
   outline: none;
   color: var(--primary-white-color);
+  @media screen and(min-width:480px) {
+    width: 350px;
+  }
   @media screen and(min-width:1200px) {
     width: 358px;
   }
