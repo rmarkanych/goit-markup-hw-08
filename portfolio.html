@@ -21,11 +21,13 @@
         <a class="header__logo link" href="./index.html"
           >Web<span class="header__logo--primary">Studio</span>
         </a>
-        <button class="header__button"
+        <button
+          class="header__button"
           type="button"
           aria-expanded="false"
           aria-controls="menu-container"
-          data-menu-button>
+          data-menu-button
+        >
           <svg class="header__burger" width="24" height="16">
             <use class="header-icon__burger" href="./images/icons.svg#menu-burger"></use>
             <use class="header-icon__close" href="./images/icons.svg#close-burger"></use>
@@ -502,7 +504,44 @@
           </form>
         </div>
       </div>
-      
     </footer>
+     <div class="mobile-menu" data-menu>
+      <ul class="mobile-menu__navigations">
+        <li class="mobile-menu__navigation">
+          <a class="mobile-menu__navlink  link" href="./index.html"
+            >Студия</a
+          >
+        </li>
+        <li class="mobile-menu__navigation">
+          <a class="mobile-menu__navlink link navigation__link--current" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobile-menu__navigation">
+          <a class="mobile-menu__navlink link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__contact">
+          <a class="mobile-menu__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-menu__contact">
+          <a class="mobile-menu__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials">
+        <li class="mobile-menu__social">
+          <a class="mobile-menu__soclink link" href="#">Instagram</a>
+        </li>
+        <li class="mobile-menu__social">
+          <a class="mobile-menu__soclink link" href="#">Twitter</a>
+        </li>
+        <li class="mobile-menu__social">
+          <a class="mobile-menu__soclink link" href="#">Facebook</a>
+        </li>
+        <li class="mobile-menu__social">
+          <a class="mobile-menu__soclink link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+     <script src="./js/menu.js"></script>
   </body>
 </html>

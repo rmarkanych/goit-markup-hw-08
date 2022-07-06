@@ -1546,6 +1546,7 @@ button {
   width: 100%;
   height: 100%;
   top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1553,8 +1554,8 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: white;
   padding: 48px 40px;
+  background-color: var(--primary-white-color);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1584,16 +1585,18 @@ button {
   fill: var(--primary-blue-color);
 }
 
-.header__button .header-icon__close {
-  opacity: 0;
-}
-
-.header__button.is-open .header-icon__close {
+.header-icon__burger {
   opacity: 1;
 }
-
 .header__button.is-open .header-icon__burger {
   opacity: 0;
+}
+
+.header-icon__close {
+  opacity: 0;
+}
+.header__button.is-open .header-icon__close {
+  opacity: 1;
 }
 
 .mobile-menu__navigations {

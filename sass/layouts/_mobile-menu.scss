@@ -3,10 +3,12 @@
   width: 100%;
   height: 100%;
   top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
-  background-color: white;
   padding: 48px 40px;
+  background-color: var(--primary-white-color);
+
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -32,16 +34,17 @@
 .header__button:focus {
   fill: var(--primary-blue-color);
 }
-.header__button .header-icon__close {
-  opacity: 0;
-}
-
-.header__button.is-open .header-icon__close {
+.header-icon__burger {
   opacity: 1;
+  .header__button.is-open & {
+    opacity: 0;
+  }
 }
-
-.header__button.is-open .header-icon__burger {
+.header-icon__close {
   opacity: 0;
+  .header__button.is-open & {
+    opacity: 1;
+  }
 }
 
 .mobile-menu__navigations {
