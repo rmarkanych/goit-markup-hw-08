@@ -237,34 +237,49 @@
           <ul class="engagement__list">
             <li class="engagement__item">
               <div class="engagement__description--wrapper">
-                <img
-                  class="engagement__image"
-                  src="./images/box1opti.jpeg"
-                  alt="coding"
-                  width="370"
-                />
+                <picture class="engagement__image">
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images/features/imgfeatures-1_lg.jpg    1x,
+                      ./images/features/imgfeatures-1_lg@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img src="./images/features/imgfeatures-1_lg.jpg " alt="coding" />
+                </picture>
                 <p class="engagement__description">Десктопные приложения</p>
               </div>
             </li>
             <li class="engagement__item">
               <div class="engagement__description--wrapper">
-                <img
-                  class="engagement__image"
-                  src="./images/box2opti.jpeg"
-                  alt="developing a design"
-                  width="370"
-                />
+                <picture class="engagement__image">
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images/features/imgfeatures-2_lg.jpg    1x,
+                      ./images/features/imgfeatures-2_lg@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img src="./images/features/imgfeatures-2_lg.jpg " alt="developing a design" />
+                </picture>
                 <p class="engagement__description">Мобильные приложения</p>
               </div>
             </li>
             <li class="engagement__item">
               <div class="engagement__description--wrapper">
-                <img
-                  class="engagement__image"
-                  src="./images/box3opti.jpeg"
-                  alt="coosing a color"
-                  width="370"
-                />
+                <picture class="engagement__image">
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images/features/imgfeatures-3_lg.jpg    1x,
+                      ./images/features/imgfeatures-3_lg@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img src="./images/features/imgfeatures-3_lg.jpg " alt="choosing a color" />
+                </picture>
                 <p class="engagement__description">Дизайнерские решения</p>
               </div>
             </li>
@@ -276,12 +291,24 @@
           <h2 class="team__title subtitle">Наша команда</h2>
           <ul class="team__list">
             <li class="team__member">
-              <img
-                class="team__image"
-                src="./images/member1opti.jpeg"
-                alt="smiling man"
-                width="270"
-              />
+              <picture class="team__image">
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/imgteam-1_lg.jpg 1x, ./images/team/imgteam-1_lg2@x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/imgteam-1_md.jpg 1x, ./images/team/imgteam-1_md@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="./images/team/imgteam-1_sm.jpg 1x, ./images/team/imgteam-1_sm@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/imgteam-1_sm.jpg" alt="smiling man" />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -318,12 +345,24 @@
               </div>
             </li>
             <li class="team__member">
-              <img
-                class="team__image"
-                src="./images/member2opti.jpeg"
-                alt="smiling woman"
-                width="270"
-              />
+              <picture class="team__image">
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/imgteam-2_lg.jpg 1x, ./images/team/imgteam-2_lg@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/imgteam-2_md.jpg 1x, ./images/team/imgteam-2_md@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="./images/team/imgteam-2_sm.jpg 1x, ./images/team/imgteam-2_sm@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/imgteam-2_sm.jpg" alt="smiling woman" />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -360,12 +399,24 @@
               </div>
             </li>
             <li class="team__member">
-              <img
-                class="team__image"
-                src="./images/member3opti.jpeg"
-                alt="smiling man"
-                width="270"
-              />
+              <picture class="team__image">
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/imgteam-3_lg.jpg 1x, ./images/team/imgteam-3_lg@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/imgteam-3_md.jpg 1x, ./images/team/imgteam-3_md@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="./images/team/imgteam-3_sm.jpg 1x, ./images/team/imgteam-3_sm@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/imgteam-3_sm.jpg" alt="smiling man" />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -402,12 +453,24 @@
               </div>
             </li>
             <li class="team__member">
-              <img
-                class="team__image"
-                src="./images/member4opti.jpeg"
-                alt="smiling man"
-                width="270"
-              />
+              <picture class="team__image">
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/imgteam-4_lg.jpg 1x, ./images/team/imgteam-4_lg@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/imgteam-4_md.jpg 1x, ./images/team/imgteam-4_md@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="./images/team/imgteam-4_sm.jpg 1x, ./images/team/imgteam-4_sm@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/imgteam-4_sm.jpg" alt="smiling man" />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
