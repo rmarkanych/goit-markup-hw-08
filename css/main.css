@@ -1574,7 +1574,7 @@ button {
 
 .header__button {
   position: relative;
-  z-index: 100;
+  z-index: 9;
   -webkit-transition: fill var(--animation);
   transition: fill var(--animation);
 }
