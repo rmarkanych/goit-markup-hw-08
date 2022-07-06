@@ -46,7 +46,9 @@
     opacity: 1;
   }
 }
-
+.no-scroll {
+  overflow: hidden;
+}
 .mobile-menu__navigations {
   display: flex;
   flex-direction: column;

@@ -1609,6 +1609,10 @@ button {
   opacity: 1;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .mobile-menu__navigations {
   display: -webkit-box;
   display: -ms-flexbox;
