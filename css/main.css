@@ -418,8 +418,8 @@ button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  min-height: 609px;
-  min-width: 450px;
+  max-height: 609px;
+  max-width: 450px;
   padding: 40px;
   background-color: var(--primary-white-color);
   -webkit-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.14), 3px 0px 1px rgba(0, 0, 0, 0.12);
@@ -429,6 +429,12 @@ button {
   transition: -webkit-transform var(--animation);
   transition: transform var(--animation);
   transition: transform var(--animation), -webkit-transform var(--animation);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    min-height: 609px;
+    min-width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
