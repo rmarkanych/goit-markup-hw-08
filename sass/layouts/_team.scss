@@ -21,31 +21,12 @@
     flex-basis: 450px;
     @media screen and (min-width: 768px) {
       flex-basis: 354px;
-      // width: 50%;
-      // calc((100%- 30px) / 2)
     }
     @media screen and (min-width: 1200px) {
-      // flex-basis: calc((100% - 30px * 3) / 4);
-      flex-basis: 270px;
+      flex-basis: 370px;
     }
   }
-  &__image {
-    @media screen and (max-width: 479px) {
-      max: width 100%;
-    }
-    @media screen and (min-width: 480px) {
-      width: 450px;
-    }
-    @media screen and (min-width: 768px) {
-      width: 354px;
-      // width: 50%;
-      // calc((100%- 30px) / 2)
-    }
-    @media screen and (min-width: 1200px) {
-      // flex-basis: calc((100% - 30px * 3) / 4);
-      width: 270px;
-    }
-  }
+
   &__text {
     padding-top: 30px;
     padding-bottom: 30px;
